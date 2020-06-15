@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' =>'pgsql',// env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -65,13 +65,13 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
-            'charset' => 'utf8',
+            //'url' => env('DATABASE_URL'),
+            'host' => 'ec2-52-44-55-63.compute-1.amazonaws.com',//env('DB_HOST', '127.0.0.1'),
+            'port' => '5432',//env('DB_PORT', '5432'),
+            'database' => 'd8m56m4ddrh7j1',//env('DB_DATABASE', 'forge'),
+            'username' => 'tpkuzixyprnwvo',//env('DB_USERNAME', 'forge'),
+            'password' => '1027e527bfe40d69cbc9ce307f17804fee3199dd51a6eb45f769b0f3103272fa',//env('DB_PASSWORD', ''),
+            'charset' => 'utf8mb4',
             'prefix' => '',
             'prefix_indexes' => true,
             'schema' => 'public',
@@ -86,7 +86,7 @@ return [
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
-            'charset' => 'utf8',
+            'charset' => 'utf8mb4',
             'prefix' => '',
             'prefix_indexes' => true,
         ],
